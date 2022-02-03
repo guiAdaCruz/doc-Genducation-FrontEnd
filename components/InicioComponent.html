@@ -1,0 +1,1232 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>projeto-integrador documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">projeto-integrador documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  InicioComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/inicio/inicio.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-inicio</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./inicio.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./inicio.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#idTema" >idTema</a>
+                            </li>
+                            <li>
+                                <a href="#idUser" >idUser</a>
+                            </li>
+                            <li>
+                                <a href="#listaPostagens" >listaPostagens</a>
+                            </li>
+                            <li>
+                                <a href="#listaTemas" >listaTemas</a>
+                            </li>
+                            <li>
+                                <a href="#nome" >nome</a>
+                            </li>
+                            <li>
+                                <a href="#postagem" >postagem</a>
+                            </li>
+                            <li>
+                                <a href="#tema" >tema</a>
+                            </li>
+                            <li>
+                                <a href="#usuario" >usuario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#findByIdTema" >findByIdTema</a>
+                            </li>
+                            <li>
+                                <a href="#findByIdUser" >findByIdUser</a>
+                            </li>
+                            <li>
+                                <a href="#getAllPostagens" >getAllPostagens</a>
+                            </li>
+                            <li>
+                                <a href="#getAllTemas" >getAllTemas</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#publicar" >publicar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, postagemService: <a href="../injectables/PostagemService.html" target="_self">PostagemService</a>, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, temaService: <a href="../injectables/TemaService.html" target="_self">TemaService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/inicio/inicio.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>postagemService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PostagemService.html" target="_self" >PostagemService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>temaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TemaService.html" target="_self" >TemaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByIdTema"></a>
+                    <span class="name">
+                        <span ><b>findByIdTema</b></span>
+                        <a href="#findByIdTema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByIdTema()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByIdUser"></a>
+                    <span class="name">
+                        <span ><b>findByIdUser</b></span>
+                        <a href="#findByIdUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByIdUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllPostagens"></a>
+                    <span class="name">
+                        <span ><b>getAllPostagens</b></span>
+                        <a href="#getAllPostagens"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllPostagens()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllTemas"></a>
+                    <span class="name">
+                        <span ><b>getAllTemas</b></span>
+                        <a href="#getAllTemas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllTemas()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicar"></a>
+                    <span class="name">
+                        <span ><b>publicar</b></span>
+                        <a href="#publicar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>publicar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idTema"></a>
+                    <span class="name">
+                        <span ><b>idTema</b></span>
+                        <a href="#idTema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/inicio/inicio.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idUser"></a>
+                    <span class="name">
+                        <span ><b>idUser</b></span>
+                        <a href="#idUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>environment.email</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/inicio/inicio.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listaPostagens"></a>
+                    <span class="name">
+                        <span ><b>listaPostagens</b></span>
+                        <a href="#listaPostagens"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Postagem.html" target="_self" >Postagem[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/inicio/inicio.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listaTemas"></a>
+                    <span class="name">
+                        <span ><b>listaTemas</b></span>
+                        <a href="#listaTemas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Tema.html" target="_self" >Tema[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/inicio/inicio.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nome"></a>
+                    <span class="name">
+                        <span ><b>nome</b></span>
+                        <a href="#nome"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>environment.nomeCompleto</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/inicio/inicio.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="postagem"></a>
+                    <span class="name">
+                        <span ><b>postagem</b></span>
+                        <a href="#postagem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Postagem.html" target="_self" >Postagem</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Postagem()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/inicio/inicio.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tema"></a>
+                    <span class="name">
+                        <span ><b>tema</b></span>
+                        <a href="#tema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Tema.html" target="_self" >Tema</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Tema()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/inicio/inicio.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="usuario"></a>
+                    <span class="name">
+                        <span ><b>usuario</b></span>
+                        <a href="#usuario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Usuario.html" target="_self" >Usuario</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Usuario()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/inicio/inicio.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { environment } from &#x27;src/environments/environment.prod&#x27;;
+import { Postagem } from &#x27;../model/Postagem&#x27;;
+import { Tema } from &#x27;../model/Tema&#x27;;
+import { Usuario } from &#x27;../model/Usuario&#x27;;
+import { AuthService } from &#x27;../service/auth.service&#x27;;
+import { PostagemService } from &#x27;../service/postagem.service&#x27;;
+import { TemaService } from &#x27;../service/tema.service&#x27;;
+
+@Component({
+  selector: &#x27;app-inicio&#x27;,
+  templateUrl: &#x27;./inicio.component.html&#x27;,
+  styleUrls: [&#x27;./inicio.component.css&#x27;]
+})
+export class InicioComponent implements OnInit {
+
+  postagem: Postagem &#x3D; new Postagem()
+  listaPostagens: Postagem[]
+
+  tema: Tema &#x3D; new Tema()
+  listaTemas: Tema[]
+  idTema: number
+
+  usuario: Usuario &#x3D; new Usuario()
+  idUser &#x3D; environment.email
+  nome &#x3D; environment.nomeCompleto
+
+  constructor(
+    private router: Router,
+    private postagemService: PostagemService,
+    private authService: AuthService,
+    private temaService: TemaService
+  ) { }
+
+  ngOnInit(){
+    window.scroll(0,0)
+
+    if(environment.token &#x3D;&#x3D; &#x27;&#x27;){
+      this.router.navigate([&#x27;/entrar&#x27;])
+    }
+
+    this.getAllTemas()
+    this.getAllPostagens()
+    
+  }
+
+  getAllTemas(){
+    this.temaService.getAllTema().subscribe((resp: Tema[]) &#x3D;&gt; {
+      this.listaTemas &#x3D; resp
+    })
+  }
+
+  findByIdTema(){
+    this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) &#x3D;&gt;{
+      this.tema &#x3D; resp
+    })
+  }
+
+  getAllPostagens(){
+    this.postagemService.getAllPostagens().subscribe((resp: Postagem[])&#x3D;&gt;{
+      this.listaPostagens &#x3D; resp
+    })
+  }
+
+  findByIdUser(){
+    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) &#x3D;&gt;{
+      this.usuario &#x3D; resp
+    })
+  }
+
+  publicar(){
+    this.tema.idTema &#x3D; this.idTema
+    this.postagem.tema &#x3D; this.tema
+
+    this.usuario.email &#x3D; this.idUser
+    this.postagem.usuario &#x3D; this.usuario
+
+    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) &#x3D;&gt; {
+      this.postagem &#x3D; resp
+      alert(&#x27;Postagem realizada com sucesso!&#x27;)
+      this.postagem &#x3D; new Postagem()
+      this.getAllPostagens()
+    })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+
+    &lt;div class&#x3D;&quot;row bg-gradient d-flex align-items-center&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+
+            &lt;div class&#x3D;&quot;row d-flex justify-content-center&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-6 text-white&quot;&gt;
+                    &lt;h2&gt;
+                        &lt;p class&#x3D;&quot;fs-40&quot;&gt;Bem vinde, {{nome}}&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;fs-20&quot;&gt;Conheça um pouco mais sobre a iniciativa do projeto Genducation!&lt;/p&gt;
+                    &lt;/h2&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;row d-flex justify-content-center mt-3 mb-5&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-6 d-flex justify-content-flex-start&quot;&gt;
+                    &lt;button  class&#x3D;&quot;btn botao&quot; data-toggle&#x3D;&quot;modal&quot;&gt;&lt;a class&#x3D;&quot;text-decoration-none&quot; href&#x3D;&quot;#sobre&quot;&gt; Saiba mais&lt;/a&gt;&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-md-6 d-flex justify-content-center&quot;&gt;
+            &lt;img src&#x3D;&quot;https://i.imgur.com/IiczceX.png&quot; alt&#x3D;&quot;&quot; width&#x3D;&quot;500px&quot; height&#x3D;&quot;500px&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;container ft-rubik mb-5 &quot;&gt;
+    &lt;h1 id&#x3D;&quot;sobre&quot; class&#x3D;&quot;mt-4 mb-4 ft-rubik pt-4 text-center&quot;&gt;Sobre a Genducation!&lt;/h1&gt;
+    &lt;div class&#x3D;&quot;row d-flex justify-content-center&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-11&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-6 mt-5&quot;&gt;
+                    &lt;h2 class&#x3D;&quot;mt-4 mb-3&quot;&gt;Motivação&lt;/h2&gt;
+                    &lt;p  class&#x3D;&quot;text-justify&quot;&gt;A ideia surgiu durante o Bootcamp da Generation Brasil e o projeto se trata de uma rede social com base no &lt;strong&gt;4º Objetivo de Desenvolvimento Sustentável da ONU - Educação de qualidade&lt;/strong&gt; que tem como objetivo assegurar a educação inclusiva, equitativa, de qualidade e promover oportunidades de aprendizagem ao longo da vida para todos e todas.&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-md-6 m-0 p-0 d-flex align-items-center justify-content-center&quot;&gt;
+                    &lt;img class&#x3D;&quot;w-75 p-0&quot; src&#x3D;&quot;./assets/img/About-us.png&quot; alt&#x3D;&quot;&quot;&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;container-fluid ft-rubik&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;h2 class&#x3D;&quot;text-center mt-4 mb-4 fs-32&quot;&gt;Time de Desenvolvimento&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Cards--&gt;
+&lt;div class&#x3D;&quot;row row-cols-1 row-cols-md-3 mt-5 center m-0 mb-5&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12 mb-6 m-0 center&quot;&gt;
+
+        &lt;!--Primeira linha--&gt;
+        &lt;div class&#x3D;&quot;row center m-0&quot;&gt;
+            &lt;!--Card Alan--&gt;
+            &lt;div class&#x3D;&quot;card h-100 br afastamento&quot;&gt;
+                &lt;img src&#x3D;&quot;https://i.imgur.com/wq6a3zP.png&quot; class&#x3D;&quot;card-img-top img-size mt-3&quot; alt&#x3D;&quot;Foto do Alan&quot;&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Alan Carlos&lt;/h5&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0&quot;&gt;Desenvolvedor Web&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0 mb-3&quot;&gt;Java Full Stack jr.&lt;/p&gt;
+
+                    &lt;div class&#x3D;&quot;row center&quot;&gt;
+                        &lt;div class&#x3D;&quot;p-0 mr-3 mb-0&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/AlanCS7&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img
+                                    class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/github.png&quot; alt&#x3D;&quot;Logo do github&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;p-0&quot;&gt;&lt;a href&#x3D;&quot;https://www.linkedin.com/in/alan-carlos-300124181/&quot;
+                                target&#x3D;&quot;_blank&quot;&gt;&lt;img class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/linkedin.png&quot;
+                                    alt&#x3D;&quot;Logo do linkedin&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--Card Josi--&gt;
+            &lt;div class&#x3D;&quot;card h-100 br afastamento&quot;&gt;
+                &lt;img src&#x3D;&quot;https://i.imgur.com/zGHbHwV.png&quot; class&#x3D;&quot;card-img-top img-size mt-3&quot; alt&#x3D;&quot;Foto do Alan&quot;&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Josiane Caroliny&lt;/h5&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0&quot;&gt;Desenvolvedora Web&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0 mb-3&quot;&gt;Java Full Stack jr.&lt;/p&gt;
+
+                    &lt;div class&#x3D;&quot;row center&quot;&gt;
+                        &lt;div class&#x3D;&quot;p-0 mr-3 mb-0&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/JosianeCaroliny&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img
+                                    class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/github.png&quot; alt&#x3D;&quot;Logo do github&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;p-0&quot;&gt;&lt;a href&#x3D;&quot;https://br.linkedin.com/in/josianecsn&quot;
+                                target&#x3D;&quot;_blank&quot;&gt;&lt;img class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/linkedin.png&quot;
+                                    alt&#x3D;&quot;Logo do linkedin&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--Card Fabrício--&gt;
+            &lt;div class&#x3D;&quot;card h-100 br afastamento&quot;&gt;
+                &lt;img src&#x3D;&quot;https://i.imgur.com/ZVBw6VG.png&quot; class&#x3D;&quot;card-img-top img-size mt-3&quot; alt&#x3D;&quot;Foto do Alan&quot;&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Fabrício Rocha&lt;/h5&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0&quot;&gt;Desenvolvedor Web&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0 mb-3&quot;&gt;Java Full Stack jr.&lt;/p&gt;
+
+                    &lt;div class&#x3D;&quot;row center&quot;&gt;
+                        &lt;div class&#x3D;&quot;p-0 mr-3 mb-0&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/fabricior0cha&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img
+                                    class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/github.png&quot; alt&#x3D;&quot;Logo do github&quot;&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;p-0&quot;&gt;&lt;a href&#x3D;&quot;https://www.linkedin.com/in/fabricio-rocha-097392210/&quot;
+                                target&#x3D;&quot;_blank&quot;&gt;&lt;img class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/linkedin.png&quot;
+                                    alt&#x3D;&quot;Logo do linkedin&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-12 mb-6 m-0 center&quot;&gt;
+        &lt;!--Segunda linha--&gt;
+        &lt;div class&#x3D;&quot;row center m-0 mt-5&quot;&gt;
+            &lt;!--Card Wesley--&gt;
+            &lt;div class&#x3D;&quot;card h-100 br afastamento&quot;&gt;
+                &lt;img src&#x3D;&quot;https://i.imgur.com/J61H9to.png&quot; class&#x3D;&quot;card-img-top img-size mt-3&quot; alt&#x3D;&quot;Foto do Alan&quot;&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Wesley Ninaja&lt;/h5&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0&quot;&gt;Desenvolvedor Web&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0 mb-3&quot;&gt;Java Full Stack jr.&lt;/p&gt;
+
+                    &lt;div class&#x3D;&quot;row center&quot;&gt;
+                        &lt;div class&#x3D;&quot;p-0 mr-3 mb-0&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/WesNinaja&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img
+                                    class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/github.png&quot; alt&#x3D;&quot;Logo do github&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;p-0&quot;&gt;&lt;a href&#x3D;&quot;https://www.linkedin.com/in/wesleycalle/&quot;
+                                target&#x3D;&quot;_blank&quot;&gt;&lt;img class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/linkedin.png&quot;
+                                    alt&#x3D;&quot;Logo do linkedin&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--Card Gui--&gt;
+            &lt;div class&#x3D;&quot;card h-100 br afastamento&quot;&gt;
+                &lt;img src&#x3D;&quot;https://i.imgur.com/9SoANs8.png&quot; class&#x3D;&quot;card-img-top img-size mt-3&quot; alt&#x3D;&quot;Foto do Alan&quot;&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Guilherme Cruz&lt;/h5&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0&quot;&gt;Desenvolvedor Web&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0 mb-3&quot;&gt;Java Full Stack jr.&lt;/p&gt;
+
+                    &lt;div class&#x3D;&quot;row center&quot;&gt;
+                        &lt;div class&#x3D;&quot;p-0 mr-3 mb-0&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/guiAdaCruz?tab&#x3D;repositories&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img
+                                    class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/github.png&quot; alt&#x3D;&quot;Logo do github&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;p-0&quot;&gt;&lt;a href&#x3D;&quot;https://www.linkedin.com/in/guilherme-cruz-144539230/&quot;
+                                target&#x3D;&quot;_blank&quot;&gt;&lt;img class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/linkedin.png&quot;
+                                    alt&#x3D;&quot;Logo do linkedin&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--Card Lucas--&gt;
+            &lt;div class&#x3D;&quot;card h-100 br afastamento&quot;&gt;
+                &lt;img src&#x3D;&quot;https://i.imgur.com/U6FXElv.png&quot; class&#x3D;&quot;card-img-top img-size mt-3&quot; alt&#x3D;&quot;Foto do Alan&quot;&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Lucas Melo&lt;/h5&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0&quot;&gt;Desenvolvedor Web&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;card-text m-0 p-0 mb-3&quot;&gt;Java Full Stack jr.&lt;/p&gt;
+
+                    &lt;div class&#x3D;&quot;row center&quot;&gt;
+                        &lt;div class&#x3D;&quot;p-0 mr-3 mb-0&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/LucasCostaMelo&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img
+                                    class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/github.png&quot; alt&#x3D;&quot;Logo do github&quot;&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;p-0&quot;&gt;&lt;a href&#x3D;&quot;https://www.linkedin.com/in/lucas-melo-53b852165/&quot;
+                                target&#x3D;&quot;_blank&quot;&gt;&lt;img class&#x3D;&quot;logo&quot; src&#x3D;&quot;../../assets/img/linkedin.png&quot;
+                                    alt&#x3D;&quot;Logo do linkedin&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;container mt-5&quot;&gt;
+    &lt;div class&#x3D;&quot;row d-flex justify-content-center text-center&quot;&gt;
+        &lt;div&gt;
+            &lt;h2 class&#x3D;&quot;ft-32 mb-5&quot;&gt;Sobre nós!&lt;/h2&gt;
+        &lt;/div&gt;
+        
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;p&gt;&quot;sdbjhdfjdsfbjfdjkfdshfk&quot;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./inicio.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.bg-gradient{
+background: linear-gradient(180deg, #7003C6 0%, #C316FF 100%);
+}
+
+.botao{
+
+    width: 110px;
+    height: 40px;
+    left: 1270px;
+    top: 18px;
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    color: #9F0DE6;
+}
+
+a{
+    color: inherit;
+}
+
+.btn-temas{
+    width: 174px;
+    height: 75px;
+    left: 199px;
+    top: 610px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, #7003C6 0%, #C316FF 100%);
+    border-radius: 5px;
+    color: white;
+    font-size: 15pt;
+}
+
+.fs-40{
+    font-size: 40pt;
+}
+
+.fs-20{
+    font-size: 20pt;
+}
+
+.fs-32{
+    font-size: 32pt;
+}
+
+.img-size{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+.card {
+    background: linear-gradient(180deg, #7003C6 0%, #C316FF 100%);
+    color: white;
+    width: 220px;
+    height: 340px;
+    margin: 10;
+    display: inline-block;
+    text-align: left;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline{
+    display: inline;
+    justify-content: center;
+    align-items: center; 
+}
+
+.br{
+    border-radius: 50px;
+}
+
+.logo{
+    width:40px;
+    height: 40px;
+}
+
+.afastamento{
+    margin-left: 25px;
+    margin-right: 25px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid">    <div class="row bg-gradient d-flex align-items-center">        <div class="col-md-6">            <div class="row d-flex justify-content-center">                <div class="col-md-6 text-white">                    <h2>                        <p class="fs-40">Bem vinde, {{nome}}</p>                        <p class="fs-20">Conheça um pouco mais sobre a iniciativa do projeto Genducation!</p>                    </h2>                </div>            </div>            <div class="row d-flex justify-content-center mt-3 mb-5">                <div class="col-md-6 d-flex justify-content-flex-start">                    <button  class="btn botao" data-toggle="modal"><a class="text-decoration-none" href="#sobre"> Saiba mais</a></button>                </div>            </div>        </div>        <div class="col-md-6 d-flex justify-content-center">            <img src="https://i.imgur.com/IiczceX.png" alt="" width="500px" height="500px">        </div>    </div></div><div class="container ft-rubik mb-5 ">    <h1 id="sobre" class="mt-4 mb-4 ft-rubik pt-4 text-center">Sobre a Genducation!</h1>    <div class="row d-flex justify-content-center">        <div class="col-md-11">            <div class="row">                <div class="col-md-6 mt-5">                    <h2 class="mt-4 mb-3">Motivação</h2>                    <p  class="text-justify">A ideia surgiu durante o Bootcamp da Generation Brasil e o projeto se trata de uma rede social com base no <strong>4º Objetivo de Desenvolvimento Sustentável da ONU - Educação de qualidade</strong> que tem como objetivo assegurar a educação inclusiva, equitativa, de qualidade e promover oportunidades de aprendizagem ao longo da vida para todos e todas.</p>                </div>                <div class="col-md-6 m-0 p-0 d-flex align-items-center justify-content-center">                    <img class="w-75 p-0" src="./assets/img/About-us.png" alt="">                </div>            </div>        </div>    </div></div><div class="container-fluid ft-rubik">    <div class="row">        <div class="col-md-12">            <h2 class="text-center mt-4 mb-4 fs-32">Time de Desenvolvimento</h2>        </div>    </div></div><!--Cards--><div class="row row-cols-1 row-cols-md-3 mt-5 center m-0 mb-5">    <div class="col-md-12 mb-6 m-0 center">        <!--Primeira linha-->        <div class="row center m-0">            <!--Card Alan-->            <div class="card h-100 br afastamento">                <img src="https://i.imgur.com/wq6a3zP.png" class="card-img-top img-size mt-3" alt="Foto do Alan">                <div class="card-body">                    <h5 class="card-title">Alan Carlos</h5>                    <p class="card-text m-0 p-0">Desenvolvedor Web</p>                    <p class="card-text m-0 p-0 mb-3">Java Full Stack jr.</p>                    <div class="row center">                        <div class="p-0 mr-3 mb-0"><a href="https://github.com/AlanCS7" target="_blank"><img                                    class="logo" src="../../assets/img/github.png" alt="Logo do github"></a></div>                        <div class="p-0"><a href="https://www.linkedin.com/in/alan-carlos-300124181/"                                target="_blank"><img class="logo" src="../../assets/img/linkedin.png"                                    alt="Logo do linkedin"></a></div>                    </div>                </div>            </div>            <!--Card Josi-->            <div class="card h-100 br afastamento">                <img src="https://i.imgur.com/zGHbHwV.png" class="card-img-top img-size mt-3" alt="Foto do Alan">                <div class="card-body">                    <h5 class="card-title">Josiane Caroliny</h5>                    <p class="card-text m-0 p-0">Desenvolvedora Web</p>                    <p class="card-text m-0 p-0 mb-3">Java Full Stack jr.</p>                    <div class="row center">                        <div class="p-0 mr-3 mb-0"><a href="https://github.com/JosianeCaroliny" target="_blank"><img                                    class="logo" src="../../assets/img/github.png" alt="Logo do github"></a></div>                        <div class="p-0"><a href="https://br.linkedin.com/in/josianecsn"                                target="_blank"><img class="logo" src="../../assets/img/linkedin.png"                                    alt="Logo do linkedin"></a></div>                    </div>                </div>            </div>            <!--Card Fabrício-->            <div class="card h-100 br afastamento">                <img src="https://i.imgur.com/ZVBw6VG.png" class="card-img-top img-size mt-3" alt="Foto do Alan">                <div class="card-body">                    <h5 class="card-title">Fabrício Rocha</h5>                    <p class="card-text m-0 p-0">Desenvolvedor Web</p>                    <p class="card-text m-0 p-0 mb-3">Java Full Stack jr.</p>                    <div class="row center">                        <div class="p-0 mr-3 mb-0"><a href="https://github.com/fabricior0cha" target="_blank"><img                                    class="logo" src="../../assets/img/github.png" alt="Logo do github"></a>                        </div>                        <div class="p-0"><a href="https://www.linkedin.com/in/fabricio-rocha-097392210/"                                target="_blank"><img class="logo" src="../../assets/img/linkedin.png"                                    alt="Logo do linkedin"></a></div>                    </div>                </div>            </div>        </div>    </div>    <div class="col-md-12 mb-6 m-0 center">        <!--Segunda linha-->        <div class="row center m-0 mt-5">            <!--Card Wesley-->            <div class="card h-100 br afastamento">                <img src="https://i.imgur.com/J61H9to.png" class="card-img-top img-size mt-3" alt="Foto do Alan">                <div class="card-body">                    <h5 class="card-title">Wesley Ninaja</h5>                    <p class="card-text m-0 p-0">Desenvolvedor Web</p>                    <p class="card-text m-0 p-0 mb-3">Java Full Stack jr.</p>                    <div class="row center">                        <div class="p-0 mr-3 mb-0"><a href="https://github.com/WesNinaja" target="_blank"><img                                    class="logo" src="../../assets/img/github.png" alt="Logo do github"></a></div>                        <div class="p-0"><a href="https://www.linkedin.com/in/wesleycalle/"                                target="_blank"><img class="logo" src="../../assets/img/linkedin.png"                                    alt="Logo do linkedin"></a></div>                    </div>                </div>            </div>            <!--Card Gui-->            <div class="card h-100 br afastamento">                <img src="https://i.imgur.com/9SoANs8.png" class="card-img-top img-size mt-3" alt="Foto do Alan">                <div class="card-body">                    <h5 class="card-title">Guilherme Cruz</h5>                    <p class="card-text m-0 p-0">Desenvolvedor Web</p>                    <p class="card-text m-0 p-0 mb-3">Java Full Stack jr.</p>                    <div class="row center">                        <div class="p-0 mr-3 mb-0"><a href="https://github.com/guiAdaCruz?tab=repositories" target="_blank"><img                                    class="logo" src="../../assets/img/github.png" alt="Logo do github"></a></div>                        <div class="p-0"><a href="https://www.linkedin.com/in/guilherme-cruz-144539230/"                                target="_blank"><img class="logo" src="../../assets/img/linkedin.png"                                    alt="Logo do linkedin"></a></div>                    </div>                </div>            </div>            <!--Card Lucas-->            <div class="card h-100 br afastamento">                <img src="https://i.imgur.com/U6FXElv.png" class="card-img-top img-size mt-3" alt="Foto do Alan">                <div class="card-body">                    <h5 class="card-title">Lucas Melo</h5>                    <p class="card-text m-0 p-0">Desenvolvedor Web</p>                    <p class="card-text m-0 p-0 mb-3">Java Full Stack jr.</p>                    <div class="row center">                        <div class="p-0 mr-3 mb-0"><a href="https://github.com/LucasCostaMelo" target="_blank"><img                                    class="logo" src="../../assets/img/github.png" alt="Logo do github"></a>                        </div>                        <div class="p-0"><a href="https://www.linkedin.com/in/lucas-melo-53b852165/"                                target="_blank"><img class="logo" src="../../assets/img/linkedin.png"                                    alt="Logo do linkedin"></a></div>                    </div>                </div>            </div>        </div>    </div></div><div class="container mt-5">    <div class="row d-flex justify-content-center text-center">        <div>            <h2 class="ft-32 mb-5">Sobre nós!</h2>        </div>                <div class="col-md-12">            <p>"sdbjhdfjdsfbjfdjkfdshfk"</p>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AlertasComponent', 'selector': 'app-alertas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemComponent', 'selector': 'app-postagem'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InicioComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InicioComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
